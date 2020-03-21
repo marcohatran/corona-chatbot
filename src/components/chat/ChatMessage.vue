@@ -5,6 +5,7 @@
             class="mb-5"
             :style="{'margin-left': msg.isRobot ? '' : 'auto'}"
     >
+        <!-- message text -->
         <v-card-text  :style="{'color': msg.isRobot ? 'black' : 'white'}" class="pa-2">
             {{msg.message}}
         </v-card-text>

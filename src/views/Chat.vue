@@ -6,6 +6,7 @@
             min-height="500px"
             class="mt-12"
     >
+        <!-- HEADER -->
         <v-row class="header pa-0 ma-0" >
             <v-col align="center" class=" pt-7">
                 <v-avatar
@@ -18,13 +19,18 @@
                 </v-avatar>
             </v-col>
 
+            <!-- OPTIONS -->
             <v-btn icon class="mt-3 mr-2">
                 <v-icon color="white">mdi-dots-vertical</v-icon>
             </v-btn>
         </v-row>
 
+        <!-- messages -->
         <v-card-text class="chats" >
+            <!-- conversation -->
             <chat-message v-for="(msg, index) in answers" :msg="msg" :key="index"/>
+
+            <!-- TYPING -->
             <div class="typing-indicator" v-if="isTyping">
                 <span></span>
                 <span></span>
@@ -32,6 +38,7 @@
             </div>
         </v-card-text>
 
+        <!-- INPUT MESSAGE -->
         <v-card-actions>
             <v-text-field v-model="chatText"
                           @keydown.enter="sendMessage"
@@ -43,6 +50,8 @@
                           color="rgb(54, 89, 255)"
                           class="mb-3 ml-3"
             />
+
+            <!-- send button -->
             <v-btn @click="sendMessage" icon class="ml-2 mr-3 mb-3">
                 <v-icon size="32"color="rgb(54, 89, 255)">mdi-send</v-icon>
             </v-btn>

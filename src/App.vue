@@ -13,14 +13,13 @@
 
       <v-spacer></v-spacer>
       <v-btn
-              href="https://github.com/vuetifyjs/vuetify/releases/latest"
+              href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019"
               text
       >
         <span style="text-transform: initial">What is COVID-19 ?</span>
       </v-btn>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
         text
       >
         <span style="text-transform: initial">About </span>
