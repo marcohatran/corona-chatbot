@@ -6,11 +6,11 @@ import Chat from "../views/Chat";
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home
+  // },
   {
     path: '/about',
     name: 'About',
@@ -22,7 +22,7 @@ const routes = [
     }
   },
   {
-    path: '/chat',
+    path: '/',
     name: 'Chat',
     component: Chat
   }
